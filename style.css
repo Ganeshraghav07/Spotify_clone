@@ -223,96 +223,116 @@ a{
     border-radius: 50%;
     margin-top: -6px;
 }
-
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .main {
     flex-direction: column;
-    padding: 0;
+    height: auto;
+    overflow: hidden;
   }
 
   .sidebar {
     width: 100%;
     height: auto;
-    border-radius: 0;
+    padding: 0.5rem;
   }
 
   .main-content {
-    border-radius: 0;
+    height: auto;
+    padding: 0.5rem;
+    overflow: hidden;
   }
 
   .music-player {
-    height: auto;
+    position: relative;
     flex-direction: column;
-    padding: 1rem;
+    height: auto;
+    padding: 0.5rem;
+    gap: 0.5rem;
   }
 
-  .player, .album, .controls {
+  .album, .player, .controls {
     width: 100%;
-    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .nav-option {
+    font-size: 0.85rem;
+    line-height: 1.8rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .nav-option i {
+    font-size: 1rem;
+  }
+
+  .nav-option a {
+    font-size: 0.9rem;
+  }
+
+  .box {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    height: auto;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    height: auto;
   }
 
   .card-container {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0.5rem;
   }
 
   .card {
-    margin: 1rem;
+    width: 120px;
+    padding: 0.75rem;
+    margin: 0.5rem;
   }
-}
 
-@media (max-width: 768px) {
+  .card-title {
+    font-size: 0.85rem;
+  }
+
+  .card-info {
+    font-size: 0.75rem;
+  }
+
+  .player-control-icon {
+    height: 0.85rem;
+    margin-right: 1rem;
+  }
+
+  .progress-bar {
+    width: 85%;
+    height: 0.25rem;
+  }
+
   .sticky-nav {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+    align-items: center;
+    padding: 0.5rem 0;
   }
 
   .sticky-nav-option {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
   }
 
-  .nav-item {
-    margin-right: 0;
+  .footer {
+    height: auto;
+    padding: 1rem 0;
   }
 
-  .box {
-    padding: 1rem;
-  }
-
-  .box-p1, .box-p2 {
-    text-align: center;
-  }
-
-  .badge {
-    align-self: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
+  .line {
     width: 90%;
-    margin: 1rem auto;
-  }
-
-  .progress-bar {
-    width: 100%;
-    margin: 0.5rem 0;
-  }
-
-  .player-controls {
-    flex-wrap: wrap;
-    gap: 1rem;
+    height: 1px;
+    opacity: 0.3;
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-  overflow-x: hidden;
-}
