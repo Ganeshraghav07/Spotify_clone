@@ -223,3 +223,96 @@ a{
     border-radius: 50%;
     margin-top: -6px;
 }
+
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .main-content {
+    border-radius: 0;
+  }
+
+  .music-player {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .player, .album, .controls {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sticky-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .sticky-nav-option {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-item {
+    margin-right: 0;
+  }
+
+  .box {
+    padding: 1rem;
+  }
+
+  .box-p1, .box-p2 {
+    text-align: center;
+  }
+
+  .badge {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .progress-bar {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .player-controls {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
