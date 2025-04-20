@@ -224,115 +224,15 @@ a{
     margin-top: -6px;
 }
 @media (max-width: 768px) {
-  .main {
-    flex-direction: column;
-    height: auto;
-    overflow: hidden;
+  html, body {
+    overflow: hidden !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    transform: scale(0.75);  
+    transform-origin: top left;
   }
 
-  .sidebar {
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
-  }
-
-  .main-content {
-    height: auto;
-    padding: 0.5rem;
-    overflow: hidden;
-  }
-
-  .music-player {
-    position: relative;
-    flex-direction: column;
-    height: auto;
-    padding: 0.5rem;
-    gap: 0.5rem;
-  }
-
-  .album, .player, .controls {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-option {
-    font-size: 0.85rem;
-    line-height: 1.8rem;
-    padding: 0.25rem 0.5rem;
-  }
-
-  .nav-option i {
-    font-size: 1rem;
-  }
-
-  .nav-option a {
-    font-size: 0.9rem;
-  }
-
-  .box {
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    height: auto;
-  }
-
-  .badge {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.75rem;
-    height: auto;
-  }
-
-  .card-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0.5rem;
-  }
-
-  .card {
-    width: 120px;
-    padding: 0.75rem;
-    margin: 0.5rem;
-  }
-
-  .card-title {
-    font-size: 0.85rem;
-  }
-
-  .card-info {
-    font-size: 0.75rem;
-  }
-
-  .player-control-icon {
-    height: 0.85rem;
-    margin-right: 1rem;
-  }
-
-  .progress-bar {
-    width: 85%;
-    height: 0.25rem;
-  }
-
-  .sticky-nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
-
-  .sticky-nav-option {
-    flex-direction: column;
-    gap: 0.25rem;
-    margin-top: 0.5rem;
-  }
-
-  .footer {
-    height: auto;
-    padding: 1rem 0;
-  }
-
-  .line {
-    width: 90%;
-    height: 1px;
-    opacity: 0.3;
+  .main, .sidebar, .main-content, .music-player {
+    overflow: hidden !important;
   }
 }
-
-
